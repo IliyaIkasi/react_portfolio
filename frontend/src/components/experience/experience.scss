@@ -1,0 +1,73 @@
+.experience-section {
+	padding: 5rem 0 0;
+	height: 100%;
+
+	.experience-title {
+		display: flex;
+		gap: 3rem;
+		align-items: center;
+
+		h2 {
+			margin-left: 5rem;
+			font-size: 30px;
+		}
+
+		hr {
+			width: 20rem;
+		}
+	}
+
+	.experience-content {
+		display: flex;
+		margin: 1rem 0;
+		color: #ffffff80;
+		gap: 5rem;
+
+		.job-name {
+			flex: 1;
+			text-align: center;
+
+			.job-title {
+				cursor: pointer;
+				margin-top: 2rem;
+
+				&:hover {
+					color: #80cfd5;
+				}
+			}
+		}
+
+		.job-desc {
+			flex: 3;
+
+			.role {
+				h3 {
+					font-size: 30px;
+					color: #80cfd5;
+
+					span {
+						color: #ffffff80;
+					}
+				}
+			}
+
+			.duration {
+				margin-bottom: 0.5rem;
+
+				span {
+					color: #80cfd5;
+				}
+			}
+
+			.desc {
+				display: flex;
+				align-items: center;
+
+				.desc-icon {
+					color: #80cfd5;
+					margin-right: 2rem;
+				}
+			}
+		}
+	}
+}

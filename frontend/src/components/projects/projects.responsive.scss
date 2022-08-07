@@ -1,0 +1,226 @@
+// Ipads and Tablets
+@media (max-width: 768px) {
+	.projects-section {
+		padding: 5rem 2rem 0;
+		margin: 0;
+
+		.projects-header {
+			font-size: 20px;
+			margin: 0 2rem;
+
+			.projects-title {
+				margin: 0;
+
+				hr {
+					width: 100%;
+				}
+			}
+
+			.projects-text {
+				margin: 0;
+
+				hr {
+					width: 100%;
+				}
+			}
+		}
+
+		.projects-container {
+			.projects-content {
+				height: 30rem;
+				align-items: center;
+			}
+		}
+	}
+}
+
+// Mobile Devices
+@media (max-width: 480px) {
+	.projects-section {
+		margin: 0;
+
+		.projects-header {
+			justify-content: space-between;
+			font-size: 20px;
+			margin: 0 1rem;
+
+			.projects-title {
+				margin: 0;
+
+				hr {
+					width: 100%;
+				}
+			}
+
+			.projects-text {
+				display: none;
+				margin: 0;
+
+				hr {
+					width: 100%;
+				}
+			}
+		}
+
+		.projects-container {
+			.projects-content {
+				display: flex;
+				gap: 1rem;
+				margin: 3rem 0;
+				height: 100%;
+				align-items: center;
+
+				.projects-image-card {
+					flex: 1;
+					width: 100%;
+					height: 15rem;
+					cursor: pointer;
+
+					.card-circle {
+						background: #112240;
+						padding: 0.5rem 0;
+						border-top-left-radius: 20px;
+						border-top-right-radius: 20px;
+						display: flex;
+
+						.circle {
+							width: 0.6rem;
+							height: 10px;
+							background-color: white;
+							border-radius: 50%;
+							margin-left: 10px;
+							text-align: center;
+						}
+					}
+
+					img {
+						width: 100%;
+						height: 90%;
+						border-bottom-left-radius: 20px;
+						border-bottom-right-radius: 20px;
+					}
+				}
+
+				.projects-info-card {
+					width: 80%;
+					flex: 1;
+					text-align: end;
+					color: #ffffff80;
+					font-size: 15px;
+
+					.info-header {
+						font-size: 25px;
+						color: #80cfd5;
+					}
+
+					.info-name {
+						color: #ffffff80;
+						margin-top: 1rem;
+
+						h4 {
+							width: auto;
+
+							&:hover {
+								color: white;
+							}
+						}
+					}
+
+					.info-desc {
+						border-radius: 10px;
+						padding: 1rem;
+						background: #112240;
+						margin-top: 1rem;
+					}
+
+					.info-usedTech {
+						color: white;
+						display: flex;
+						margin-top: 1rem;
+						flex-direction: row-reverse;
+
+						p {
+							margin: 0 0.5rem;
+						}
+					}
+
+					.info-link {
+						display: flex;
+						flex-direction: row-reverse;
+						color: #80cfd5;
+						margin-top: 1rem;
+
+						a {
+							margin: 0 1rem;
+
+							&:hover {
+								color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Mobile Devices
+@media (max-width: 320px) {
+	.projects-section {
+		padding: 5rem 1rem 0;
+		margin: 0;
+
+		.projects-header {
+			margin: 0 1rem;
+
+			.projects-title {
+				margin: 0;
+				display: flex;
+				align-items: center;
+				width: 100%;
+
+				h2 {
+					width: 30rem;
+				}
+			}
+
+			.projects-text {
+				margin: 0;
+				display: none;
+			}
+		}
+
+		.projects-container {
+			.projects-content {
+				display: block;
+				margin: 4rem 0 5rem;
+
+				.projects-info-card {
+					width: 100%;
+					margin-top: 1rem;
+
+					.info-text {
+						display: flex;
+						justify-content: space-between;
+
+						.info-header {
+							font-size: 20px;
+						}
+
+						.info-name {
+							font-size: 15px;
+							margin-top: 0;
+						}
+					}
+					.info-desc {
+						display: none;
+					}
+
+					.info-tech-link {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

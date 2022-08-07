@@ -1,0 +1,179 @@
+// Ipads and Tablets
+@media (max-width: 768px) {
+	.about-section {
+		padding: 5rem 2rem;
+		width: 100%;
+		height: 100%;
+
+		.about-title {
+			gap: 0.5rem;
+			margin: 0 2rem;
+
+			h2 {
+				margin: 0;
+				width: 10rem;
+				font-size: 20px;
+			}
+
+			hr {
+				width: 100%;
+			}
+		}
+
+		.about-content {
+			width: 100%;
+			height: 100%;
+
+			.content-text {
+				width: 100%;
+				height: 100%;
+
+				p {
+					padding-top: 1rem;
+				}
+
+				.tech-list {
+					flex-wrap: wrap;
+					justify-content: center;
+
+					ul {
+						padding-top: 1.5rem;
+						margin: 0;
+						gap: 5rem;
+
+						.list-item {
+							width: 10rem;
+							align-items: center;
+						}
+					}
+				}
+			}
+
+			.about-image {
+				display: none;
+			}
+		}
+	}
+}
+
+// Mobile Devices
+@media (max-width: 480px) {
+	.about-section {
+		padding: 10rem 2rem 0;
+		margin-bottom: 0;
+		width: 100%;
+		height: 100%;
+
+		.about-title {
+			display: flex;
+			gap: 0.5rem;
+			margin: 0 2rem;
+			align-items: center;
+
+			h2 {
+				margin: 0;
+				width: 10rem;
+				font-size: 20px;
+			}
+
+			hr {
+				width: 100%;
+				color: #80cfd5;
+			}
+		}
+
+		.about-content {
+			height: 100%;
+			display: block;
+			color: #ffffff80;
+			gap: 2rem;
+			margin-top: 1rem;
+
+			.content-text {
+				font-size: 15px;
+
+				p {
+					padding-top: 0.5rem;
+				}
+
+				.highlight {
+					color: #80cfd5;
+				}
+
+				.tech-list {
+					display: flex;
+					list-style: none;
+					flex-wrap: nowrap;
+					flex-direction: column;
+					justify-content: flex-start;
+					columns: 0;
+
+					ul {
+						width: 100%;
+						display: flex;
+						margin-top: 0.5rem;
+						padding: 0.5rem 0;
+						gap: 5rem;
+
+						.list-item {
+							justify-content: center;
+							width: 10rem;
+							display: flex;
+							align-items: center;
+
+							.tech-icon {
+								color: #80cfd5;
+							}
+						}
+					}
+				}
+			}
+
+			.about-image {
+				display: none;
+				margin-top: 1rem;
+				padding: 0 5rem;
+
+				img {
+					width: 100%;
+					height: 15rem;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}
+
+// Smaller Mobile Devices
+@media (max-width: 320px) {
+	.about-section {
+		padding: 5rem 1rem 0;
+
+		.about-title {
+			margin: 0 1rem;
+		}
+
+		.about-content {
+			.content-text {
+				.hide {
+					display: none;
+				}
+
+				.view-btn {
+					background-color: #80cfd5;
+					padding: 0.5rem;
+					margin: 0.5rem 1rem;
+					border-radius: 10px;
+				}
+
+				.tech-list {
+					ul {
+						.list-item {
+							width: 5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
