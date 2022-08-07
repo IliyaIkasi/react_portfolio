@@ -288,7 +288,12 @@ const Home = () => {
 								<h2 className="name">Iliya Ikasi Ephraim</h2>
 							</div>
 							<div className="header-text">
-								<h5>A junior web developer based in Kaduna, Nigeria. </h5>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Tempora maiores reiciendis tenetur vitae, tempore consequatur
+									laudantium dolor ex odit at aperiam numquam necessitatibus
+									consequuntur, magnam maxime nulla omnis delectus laborum!
+								</p>
 							</div>
 						</div>
 						<div className="tech-section">
@@ -326,6 +331,40 @@ const Home = () => {
 					<Contact />
 				</div>
 				<footer className="footer-main">
+					<div className="footer-icons">
+						<IconContext.Provider value={{ size: "1.5rem" }}>
+							<div className="social-icons">
+								<a href="https://github.com/IliyaIkasi">
+									<FaGithub className="icons" />
+								</a>
+							</div>
+							<div className="social-icons">
+								<a href="http://">
+									<FaTwitter className="icons" />
+								</a>
+							</div>
+							<div className="social-icons">
+								<a href="mailto:iliyaikasi@gmail.com">
+									<FaEnvelope className="icons" />
+								</a>
+							</div>
+							<div className="social-icons">
+								<a href="https://www.linkedin.com/in/iliya-ikasi-a30a02217/">
+									<FaLinkedinIn className="icons" />
+								</a>
+							</div>
+							<div className="social-icons">
+								<a href="tel:+234-9122515984">
+									<FaPhone className="icons" />
+								</a>
+							</div>
+							<div className="social-icons">
+								<a href="https://">
+									<FaFacebookF className="icons" />
+								</a>
+							</div>
+						</IconContext.Provider>
+					</div>
 					<div className="header-text">
 						<a href="https://github.com/IliyaIkasi">
 							Designed & Built <span>by</span> Iliya Ikasi Ephraim

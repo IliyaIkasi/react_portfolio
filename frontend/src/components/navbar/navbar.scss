@@ -9,7 +9,8 @@
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	transition: top 0.1s;
-	background: black;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background: linear-gradient(to top, transparent 0%, #0a192f 0%);
 
 	.collapse-container {
 		display: none;
@@ -19,6 +20,11 @@
 			margin: 0 0.5rem;
 			padding: 0.5rem;
 			border-radius: 10px;
+			color: white;
+
+			span {
+				color: #80cfd5;
+			}
 
 			&:hover {
 				border-bottom: 2px white solid;
@@ -27,6 +33,7 @@
 		}
 
 		.resume {
+			color: #80cfd5;
 			border-top: 1px solid;
 			border-left: 1px solid;
 			border-right: 1px solid;

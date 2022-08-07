@@ -3,23 +3,31 @@ import { FaCaretRight } from "react-icons/fa";
 import "./about.scss";
 import "./about.responsive.scss";
 import ikasi from "../../assets/ikasi.jpg";
+import { useState } from "react";
 
 const About = () => {
+	const [isView, setIsView] = useState(true);
+
 	const viewMore = () => {
 		var x = document.getElementById("hide-x");
 		var y = document.getElementById("hide-y");
+		var image = document.getElementById("about-image");
 		if (x.style.display === "none") {
 			x.style.display = "block";
 			y.style.display = "block";
+			image.style.display = "none";
+			setIsView(false);
 		} else {
 			x.style.display = "none";
 			y.style.display = "none";
+			image.style.display = "flex";
+			setIsView(true);
 		}
 	};
 	return (
 		<div className="about-section">
 			<div className="about-title">
-				<h2>About Me</h2>
+				01. <h2>About Me</h2>
 				<hr />
 			</div>
 			<div className="about-content">
@@ -39,8 +47,9 @@ const About = () => {
 						on-hand/job experience but i've built myself by taking up projects
 						that prove difficult.
 					</p>
-					<button onClick={viewMore} className="view-btn">
-						View
+
+					<button onClick={viewMore} id="view-btn" className="view">
+						{isView ? <span>View</span> : <span>Less</span>}
 					</button>
 					<p>Technologies which I use most frequently are;</p>
 					<div className="tech-list">
@@ -76,7 +85,7 @@ const About = () => {
 						</ul>
 					</div>
 				</div>
-				<div className="about-image">
+				<div id="about-image" className="about-image">
 					<img src={ikasi} alt={ikasi} />
 				</div>
 			</div>

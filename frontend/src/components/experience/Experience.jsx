@@ -20,7 +20,7 @@ const Experience = ({ experience }) => {
 	return (
 		<div className="experience-section">
 			<div className="experience-title">
-				<h2>Where I've Worked</h2>
+				02. <h2>Where I've Worked</h2>
 				<hr />
 			</div>
 			<div className="experience-content">

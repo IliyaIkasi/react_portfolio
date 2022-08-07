@@ -6,6 +6,7 @@ import { IconContext } from "react-icons/lib";
 
 const Projects = ({ projects }) => {
 	const [isHovered, setIsHovered] = useState(false);
+	// const [isID, setIsID] = useState(0);
 
 	return (
 		<div className="projects-section">
@@ -42,13 +43,15 @@ const Projects = ({ projects }) => {
 						</div>
 						<div className="projects-info-card">
 							<div className="info-text">
-								<div className="info-header">
-									<h5>Main Project</h5>
-								</div>
-								<div className="info-name">
-									<a href={item.link}>
-										<h4>{item.name}</h4>
-									</a>
+								<div className="text">
+									<div className="info-header">
+										<h5>Main Project</h5>
+									</div>
+									<div className="info-name">
+										<a href={item.link}>
+											<h4>{item.name}</h4>
+										</a>
+									</div>
 								</div>
 							</div>
 							<div className="info-desc">
