@@ -27,7 +27,8 @@ const About = () => {
 	return (
 		<div className="about-section">
 			<div className="about-title">
-				01. <h2>About Me</h2>
+				<span>01. </span>
+				<h2>About Me</h2>
 				<hr />
 			</div>
 			<div className="about-content">
@@ -51,8 +52,8 @@ const About = () => {
 					<button onClick={viewMore} id="view-btn" className="view">
 						{isView ? <span>View</span> : <span>Less</span>}
 					</button>
-					<p>Technologies which I use most frequently are;</p>
 					<div className="tech-list">
+						<p>Technologies which I use most frequently are;</p>
 						<ul>
 							<li className="list-item">
 								<FaCaretRight className="tech-icon" />
@@ -70,7 +71,7 @@ const About = () => {
 							</li>
 							<li className="list-item">
 								<FaCaretRight className="tech-icon" />
-								NodeJs
+								Node Js
 							</li>
 						</ul>
 						<ul>

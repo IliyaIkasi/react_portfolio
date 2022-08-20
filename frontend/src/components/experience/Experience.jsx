@@ -12,7 +12,13 @@ const Experience = ({ experience }) => {
 		const filterJob =
 			value === "Apple"
 				? experience
-				: experience.filter((item) => item.org === value);
+				: experience.filter(
+						(item) => (
+							(document.getElementById(item.org).style.backgroundColor =
+								"#80cfd5"),
+							item.org === value
+						)
+				  );
 		setJobs(filterJob);
 	};
 	const job = jobs[0];
@@ -20,7 +26,8 @@ const Experience = ({ experience }) => {
 	return (
 		<div className="experience-section">
 			<div className="experience-title">
-				02. <h2>Where I've Worked</h2>
+				<span>02. </span>
+				<h2>Where I've Worked</h2>
 				<hr />
 			</div>
 			<div className="experience-content">
@@ -51,7 +58,7 @@ const Experience = ({ experience }) => {
 						{job.desc.map((item, index) => (
 							<div className="desc" key={index}>
 								<FaCaretRight className="desc-icon" />
-								{item}
+								<span>{item}</span>
 							</div>
 						))}
 					</div>
